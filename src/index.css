@@ -12,7 +12,7 @@
 body {
   font-family: 'Oxygen', sans-serif;
   color: var(--main-text-color);
-  padding: 24px 20px 0px 20px;
+  padding-top: 24px;
   margin: 0;
 }
 
@@ -21,6 +21,7 @@ h1 {
   font-weight: bold;
   margin-top: 0;
   margin-bottom: 32px;
+  text-align: center;
 }
 
 h2 {
@@ -108,12 +109,9 @@ input {
 .new-transaction-section {
   background: var(--main-text-color);
   color: var(--white);
-  margin-left: -20px;
-  margin-right: -20px;
   padding: 24px 20px;
   padding-bottom: 38px;
   box-shadow: var(--shadow);
-  position: fixed;
   bottom: 0;
   width: 100%;
   box-sizing: border-box;
@@ -128,8 +126,21 @@ input {
 
 .form-wrapper {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   margin-bottom: 28px;
+  flex-wrap: wrap;
+}
+
+.form-wrapper div {
+  padding: .5rem;
+}
+
+.form-inputs {
+  width: 150px;
+}
+
+.form-select {
+  width: 175px;
 }
 
 .new-transaction-section button {
@@ -201,4 +212,13 @@ select {
 
 .new-transactions-section {
   padding-bottom: 350px;
+}
+
+.transaction-form-container {
+  width: 100%;
+}
+
+.budget-transactions-container {
+  padding-left: 1rem;
+  padding-right: 1rem;
 }

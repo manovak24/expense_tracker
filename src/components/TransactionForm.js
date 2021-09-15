@@ -36,6 +36,7 @@ export default function TransactionForm({ categories }) {
             <label htmlFor="category">Category</label>
             <select
               id="category"
+              className="form-select"
               value={category}
               onChange={(e) => setCategory(e.currentTarget.value)}
             >
@@ -51,6 +52,7 @@ export default function TransactionForm({ categories }) {
             <label htmlFor="description">Description</label>
             <input
               id="description"
+              className="form-inputs"
               value={description}
               onChange={(e) => setDescription(e.currentTarget.value)}
               type="text"
@@ -61,6 +63,7 @@ export default function TransactionForm({ categories }) {
             <label htmlFor="amount">Amount</label>
             <input
               id="amount"
+              className="form-inputs"
               value={amount}
               onChange={(e) => setAmount(e.currentTarget.value)}
               type="number"
